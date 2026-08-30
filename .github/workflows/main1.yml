@@ -1,10 +1,12 @@
-name: first test
+name: Install php- my first workflow 
 on: workflow_dispatch
 jobs:
-  job1: install php
-    runs_on: ubuntu-latest
-    steps:
-      -name: install php
-       run: |
-         sudo apt update
-    
+    job-install-php:
+      runs-on: ubuntu-latest
+      steps:
+       - name: Update apt repo 
+         run: sudo apt update 
+       - name: Install php 
+         run: sudo apt install php -y
+       - name: php version 
+         run: php --version
