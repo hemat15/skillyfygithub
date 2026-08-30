@@ -1,0 +1,20 @@
+name: practice
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: install php
+        run: sudo apt update
+      - name: install php
+        run: sudo apt install php -y
+      - name: check version
+        run: php --version
+  job2:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: install php
+        run: |
+          sudo apt update
+          sudo apt install php -y
+          php --version
