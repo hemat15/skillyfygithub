@@ -1,0 +1,10 @@
+name: first test
+on: workflow_dispatch
+jobs:
+  job1: install php
+    runs_on: ubuntu-latest
+    steps:
+      -name: install php
+       run: |
+         sudo apt update
+    
