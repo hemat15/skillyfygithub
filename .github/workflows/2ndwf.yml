@@ -18,3 +18,25 @@ jobs:
           sudo apt update
           sudo apt install php -y
           php --version
+  job3:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: install python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: install java
+        uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '25'
+        
+
+
+
+
+
+
+
+        
