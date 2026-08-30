@@ -1,11 +1,11 @@
-  name: install php
-  on: workflow_dispatch
-  jobs:
-      job1: install php
-      runs_on: ubuntu-latest
+name: first wf
+on: workflow_dispatch
+jobs:
+  job1:
+      runs-on: ubuntu-latest
       steps:
-      - name: install
-        run: |
-          sudo apt update
-          sudo apt install php -y
-          php --version
+        - name: install php
+          run: |
+            sudo apt update
+            sudo apt install php -y
+            php --version
